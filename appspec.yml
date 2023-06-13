@@ -1,23 +1,23 @@
 version: 0.0
 os: linux 
 files:
-  - source: /
-    destination: /home/ubuntu/nodejs_ec2_pipeline
+  - source: /index.js
+    destination: /home/ubuntu/nodejs_ec2_pipeline/
 permission:
   - object: script/
     pattern: "*.sh"
-    owner: ubuntu
+    owner: root
     mode: 755
 hooks:
   ApplicationStop:
     - location: script/application_stop.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   BeforeInstall:
     - location: script/before_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: script/application_start.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
