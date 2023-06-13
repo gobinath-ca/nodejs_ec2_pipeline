@@ -1,0 +1,14 @@
+{
+    "name": "nodejs_ec2_pipeline",
+    "version": "1.0.0",
+    "description": "How to deploy a NodeJS application in EC2 standalone instance",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "express": "^4.17.1"
+    }
+  }
