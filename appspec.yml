@@ -6,18 +6,18 @@ files:
 permission:
   - object: script/
     pattern: "*.sh"
-    owner: root
+    owner: ubuntu
     mode: 755
 hooks:
   ApplicationStop:
     - location: script/application_stop.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   BeforeInstall:
     - location: script/before_install.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: script/application_start.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
