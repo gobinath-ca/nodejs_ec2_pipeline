@@ -1,9 +1,5 @@
 #!/bin/bash
-<<<<<<< HEAD
 #source /home/ubuntu/.profile
-=======
-source /home/ubuntu/.profile
->>>>>>> b5cb2ef316fea670f43ee5fbaddd9c446f4232e0
 cd /home/ubuntu/nodejs_ec2_pipeline
 echo "list directory files"
 ls -ltr
