@@ -1,6 +1,4 @@
 #!/bin/bash
-source /root/.bashrc
-echo "list of Node process running"
-sudo ps -aux | grep node | grep -v grep | wc -l
-echo "stopping the Node process that is running"
-sudo pkill node
+echo "docker stop and remove"
+docker stop ndoejs-container-03
+docker rm ndoejs-container-03 --force
