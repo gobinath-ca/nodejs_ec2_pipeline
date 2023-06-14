@@ -1,10 +1,13 @@
 #!/bin/bash
-source /root/.bashrc
+sudo source /root/.bashrc
 cd /home/ubuntu/nodejs_ec2_pipeline
 echo "list directory files"
 ls -ltr
+echo "Setting up the GitHub repo connection"
+sudo git config --global user.email "gobinath.gopalakrishnan@cloudarmee.com"
+sudo git config --global user.name "gobinath-ca"
 echo "pull the latest version of repository from the Github"
-git pull https://github.com/gobinath-ca/nodejs_ec2_pipeline.git
+sudo git pull https://github.com/gobinath-ca/nodejs_ec2_pipeline.git
 echo "install Node Dependencies"
 ls -ltr
-/root/.nvm/versions/node/v20.3.0/bin/npm install
+sudo /root/.nvm/versions/node/v20.3.0/bin/npm install
