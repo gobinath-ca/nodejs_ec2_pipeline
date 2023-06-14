@@ -1,9 +1,8 @@
 version: 0.0
 os: linux 
 files:
-  - source: index.js
-    destination: /home/ubuntu/nodejs_ec2_pipeline/
-
+  - source: /
+    destination: /home/ubuntu/nodejs_ec2_pipeline
 hooks:
   ApplicationStop:
     - location: script/application_stop.sh
