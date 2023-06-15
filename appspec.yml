@@ -16,3 +16,7 @@ hooks:
     - location: script/application_container_start.sh
       timeout: 60
       runas: ubuntu
+  ValidateService:
+    - location: script/application_container_vaidation.sh
+      timeout: 60
+      runas: ubuntu
