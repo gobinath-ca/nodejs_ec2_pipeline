@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /home/ubuntu/nodejs-pipeline-demo
+    destination: /home/ubuntu/nodejs-pipeline-demo/
 hooks:
   ApplicationStop:
     - location: script/application_container_stop.sh
