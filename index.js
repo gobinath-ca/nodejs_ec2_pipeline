@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const port = 3100;
+const port = 8081;
 
 app.get('/', (req, res) => res.send('Welcome to NodeJs EC2 Deployment Session!'));
 
