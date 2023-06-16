@@ -8,10 +8,6 @@ hooks:
     - location: script/application_container_stop.sh
       timeout: 60
       runas: ubuntu
-  BeforeInstall:
-    - location: script/before_container_start.sh
-      timeout: 60
-      runas: ubuntu
   ApplicationStart:
     - location: script/application_container_start.sh
       timeout: 60
